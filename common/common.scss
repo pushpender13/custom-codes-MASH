@@ -1,0 +1,1662 @@
+.user-fields .select-kit-header {
+  border-radius: 16px !important;
+}
+.sidebar-footer-actions-button.add-section {
+  display: none !important;
+}
+
+.sidebar-section-header-button {
+  display: none !important;
+}
+
+.admin .sidebar-section-header-button {
+  display: inline-flex !important;
+}
+
+.control-group[data-setting-name="user-locale"] {
+  display: none !important;
+}
+
+.top-external-header {
+  position: relative;
+  z-index: 1100;
+}
+
+.top-external-header,
+.top-header-inner,
+.top-header-links {
+  overflow: visible !important;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1200;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.dropdown-wrapper .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111 !important;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background: #f3f4f6;
+}
+
+.has-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fk-d-menu[data-content][data-identifier=emoji-picker] {
+    z-index: 99999999 !important;
+}
+
+/* Apply only to non-staff users */
+body:not(.staff) a.discourse-tag[href*="featured"],
+body:not(.staff) a.discourse-tag[href*="resources"],
+body:not(.staff) .discourse-tags a[href*="featured"],
+body:not(.staff) .discourse-tags a[href*="resources"],
+body:not(.staff) .tag-box[data-tag-name="featured"],
+body:not(.staff) .tag-box[data-tag-name="resources"] {
+  display: none !important;
+}
+//mod-dashboard//
+/* Hide for everyone */
+.sidebar-section[data-section-name="moderator-dashboard"] {
+  display: none !important;
+}
+
+/* Show only for staff */
+body.staff .sidebar-section[data-section-name="moderator-dashboard"] {
+  display: block !important;
+}
+body.admin .sidebar-section[data-section-name="moderator-dashboard"] {
+  display: block !important;
+}
+//end//
+/* =========================
+   US States + DC (whitelist)
+   ========================= */
+
+/* Alabama */
+.discourse-tag[data-tag-name="alabama"]::before,
+.simple-tag[data-tag-name="alabama"]::before,
+a[href*="/tag/alabama"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-al.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Alaska */
+.discourse-tag[data-tag-name="alaska"]::before,
+.simple-tag[data-tag-name="alaska"]::before,
+a[href*="/tag/alaska"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ak.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Arizona */
+.discourse-tag[data-tag-name="arizona"]::before,
+.simple-tag[data-tag-name="arizona"]::before,
+a[href*="/tag/arizona"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-az.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Arkansas */
+.discourse-tag[data-tag-name="arkansas"]::before,
+.simple-tag[data-tag-name="arkansas"]::before,
+a[href*="/tag/arkansas"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ar.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* California */
+.discourse-tag[data-tag-name="california"]::before,
+.simple-tag[data-tag-name="california"]::before,
+a[href*="/tag/california"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ca.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Colorado */
+.discourse-tag[data-tag-name="colorado"]::before,
+.simple-tag[data-tag-name="colorado"]::before,
+a[href*="/tag/colorado"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-co.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Connecticut */
+.discourse-tag[data-tag-name="connecticut"]::before,
+.simple-tag[data-tag-name="connecticut"]::before,
+a[href*="/tag/connecticut"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ct.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Delaware */
+.discourse-tag[data-tag-name="delaware"]::before,
+.simple-tag[data-tag-name="delaware"]::before,
+a[href*="/tag/delaware"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-de.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Florida */
+.discourse-tag[data-tag-name="florida"]::before,
+.simple-tag[data-tag-name="florida"]::before,
+a[href*="/tag/florida"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-fl.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Georgia */
+.discourse-tag[data-tag-name="georgia"]::before,
+.simple-tag[data-tag-name="georgia"]::before,
+a[href*="/tag/georgia"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ga.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Hawaii */
+.discourse-tag[data-tag-name="hawaii"]::before,
+.simple-tag[data-tag-name="hawaii"]::before,
+a[href*="/tag/hawaii"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-hi.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Idaho */
+.discourse-tag[data-tag-name="idaho"]::before,
+.simple-tag[data-tag-name="idaho"]::before,
+a[href*="/tag/idaho"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-id.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Illinois */
+.discourse-tag[data-tag-name="illinois"]::before,
+.simple-tag[data-tag-name="illinois"]::before,
+a[href*="/tag/illinois"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-il.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Indiana */
+.discourse-tag[data-tag-name="indiana"]::before,
+.simple-tag[data-tag-name="indiana"]::before,
+a[href*="/tag/indiana"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-in.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Iowa */
+.discourse-tag[data-tag-name="iowa"]::before,
+.simple-tag[data-tag-name="iowa"]::before,
+a[href*="/tag/iowa"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ia.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Kansas */
+.discourse-tag[data-tag-name="kansas"]::before,
+.simple-tag[data-tag-name="kansas"]::before,
+a[href*="/tag/kansas"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ks.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Kentucky */
+.discourse-tag[data-tag-name="kentucky"]::before,
+.simple-tag[data-tag-name="kentucky"]::before,
+a[href*="/tag/kentucky"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ky.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Louisiana */
+.discourse-tag[data-tag-name="louisiana"]::before,
+.simple-tag[data-tag-name="louisiana"]::before,
+a[href*="/tag/louisiana"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-la.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Maine */
+.discourse-tag[data-tag-name="maine"]::before,
+.simple-tag[data-tag-name="maine"]::before,
+a[href*="/tag/maine"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-me.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Maryland */
+.discourse-tag[data-tag-name="maryland"]::before,
+.simple-tag[data-tag-name="maryland"]::before,
+a[href*="/tag/maryland"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-md.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Massachusetts */
+.discourse-tag[data-tag-name="massachusetts"]::before,
+.simple-tag[data-tag-name="massachusetts"]::before,
+a[href*="/tag/massachusetts"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ma.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Michigan */
+.discourse-tag[data-tag-name="michigan"]::before,
+.simple-tag[data-tag-name="michigan"]::before,
+a[href*="/tag/michigan"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-mi.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Minnesota */
+.discourse-tag[data-tag-name="minnesota"]::before,
+.simple-tag[data-tag-name="minnesota"]::before,
+a[href*="/tag/minnesota"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-mn.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Mississippi */
+.discourse-tag[data-tag-name="mississippi"]::before,
+.simple-tag[data-tag-name="mississippi"]::before,
+a[href*="/tag/mississippi"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ms.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Missouri */
+.discourse-tag[data-tag-name="missouri"]::before,
+.simple-tag[data-tag-name="missouri"]::before,
+a[href*="/tag/missouri"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-mo.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Montana */
+.discourse-tag[data-tag-name="montana"]::before,
+.simple-tag[data-tag-name="montana"]::before,
+a[href*="/tag/montana"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-mt.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Nebraska */
+.discourse-tag[data-tag-name="nebraska"]::before,
+.simple-tag[data-tag-name="nebraska"]::before,
+a[href*="/tag/nebraska"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ne.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Nevada */
+.discourse-tag[data-tag-name="nevada"]::before,
+.simple-tag[data-tag-name="nevada"]::before,
+a[href*="/tag/nevada"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-nv.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* New Hampshire */
+.discourse-tag[data-tag-name="new_hampshire"]::before,
+.simple-tag[data-tag-name="new_hampshire"]::before,
+a[href*="/tag/new_hampshire"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-nh.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* New Jersey */
+.discourse-tag[data-tag-name="new_jersey"]::before,
+.simple-tag[data-tag-name="new_jersey"]::before,
+a[href*="/tag/new_jersey"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-nj.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* New Mexico */
+.discourse-tag[data-tag-name="new_mexico"]::before,
+.simple-tag[data-tag-name="new_mexico"]::before,
+a[href*="/tag/new_mexico"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-nm.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* New York */
+.discourse-tag[data-tag-name="new_york"]::before,
+.simple-tag[data-tag-name="new_york"]::before,
+a[href*="/tag/new_york"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ny.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* North Carolina */
+.discourse-tag[data-tag-name="north_carolina"]::before,
+.simple-tag[data-tag-name="north_carolina"]::before,
+a[href*="/tag/north_carolina"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-nc.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* North Dakota */
+.discourse-tag[data-tag-name="north_dakota"]::before,
+.simple-tag[data-tag-name="north_dakota"]::before,
+a[href*="/tag/north_dakota"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-nd.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Ohio */
+.discourse-tag[data-tag-name="ohio"]::before,
+.simple-tag[data-tag-name="ohio"]::before,
+a[href*="/tag/ohio"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-oh.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Oklahoma */
+.discourse-tag[data-tag-name="oklahoma"]::before,
+.simple-tag[data-tag-name="oklahoma"]::before,
+a[href*="/tag/oklahoma"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ok.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Oregon */
+.discourse-tag[data-tag-name="oregon"]::before,
+.simple-tag[data-tag-name="oregon"]::before,
+a[href*="/tag/oregon"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-or.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Pennsylvania */
+.discourse-tag[data-tag-name="pennsylvania"]::before,
+.simple-tag[data-tag-name="pennsylvania"]::before,
+a[href*="/tag/pennsylvania"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-pa.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Rhode Island */
+.discourse-tag[data-tag-name="rhode_island"]::before,
+.simple-tag[data-tag-name="rhode_island"]::before,
+a[href*="/tag/rhode_island"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ri.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* South Carolina */
+.discourse-tag[data-tag-name="south_carolina"]::before,
+.simple-tag[data-tag-name="south_carolina"]::before,
+a[href*="/tag/south_carolina"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-sc.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* South Dakota */
+.discourse-tag[data-tag-name="south_dakota"]::before,
+.simple-tag[data-tag-name="south_dakota"]::before,
+a[href*="/tag/south_dakota"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-sd.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Tennessee */
+.discourse-tag[data-tag-name="tennessee"]::before,
+.simple-tag[data-tag-name="tennessee"]::before,
+a[href*="/tag/tennessee"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-tn.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Texas */
+.discourse-tag[data-tag-name="texas"]::before,
+.simple-tag[data-tag-name="texas"]::before,
+a[href*="/tag/texas"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-tx.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Utah */
+.discourse-tag[data-tag-name="utah"]::before,
+.simple-tag[data-tag-name="utah"]::before,
+a[href*="/tag/utah"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-ut.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Vermont */
+.discourse-tag[data-tag-name="vermont"]::before,
+.simple-tag[data-tag-name="vermont"]::before,
+a[href*="/tag/vermont"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-vt.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Virginia */
+.discourse-tag[data-tag-name="virginia"]::before,
+.simple-tag[data-tag-name="virginia"]::before,
+a[href*="/tag/virginia"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-va.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Washington */
+.discourse-tag[data-tag-name="washington"]::before,
+.simple-tag[data-tag-name="washington"]::before,
+a[href*="/tag/washington"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-wa.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* West Virginia */
+.discourse-tag[data-tag-name="west_virginia"]::before,
+.simple-tag[data-tag-name="west_virginia"]::before,
+a[href*="/tag/west_virginia"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-wv.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Wisconsin */
+.discourse-tag[data-tag-name="wisconsin"]::before,
+.simple-tag[data-tag-name="wisconsin"]::before,
+a[href*="/tag/wisconsin"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-wi.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* Wyoming */
+.discourse-tag[data-tag-name="wyoming"]::before,
+.simple-tag[data-tag-name="wyoming"]::before,
+a[href*="/tag/wyoming"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-wy.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+
+/* District of Columbia */
+.discourse-tag[data-tag-name="district_of_columbia"]::before,
+.simple-tag[data-tag-name="district_of_columbia"]::before,
+a[href*="/tag/district_of_columbia"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+  background: url("https://flagcdn.com/w40/us-dc.png") center/cover no-repeat;
+  vertical-align: middle;
+}
+//flags-tags//
+    .post-menu-area {
+        margin-top: -30px !important;
+    }
+//post-actions//
+body.login-page.static-login .custom-site-footer {
+  display: none !important;
+}
+/* Hide ONLY on subcategory pages like /c/get-started/4 */
+body[class*="category-"]:not(.navigation-categories) .followed-topics {
+  display: none !important;
+}
+body.tags-page .followed-topics {
+  display: none !important;
+}
+.discourse-tag,
+.discourse-tags a,
+.list-tags a {
+  text-transform: capitalize !important;
+}
+    /* Target all labels inside signup */
+#login-form .alt-placeholder,
+#login-form .control-label.alt-placeholder {
+  font-family: Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 140% !important;
+  letter-spacing: 0px !important;
+  color: #002D73 !important;
+  display: inline-block !important;
+  margin-bottom: 6px !important;
+}
+
+/* Ensure input + label spacing looks correct */
+#login-form .input-group {
+  margin-bottom: 16px;
+}
+
+
+/* Fix Discourse floating/overlap issues */
+#login-form .input-group input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+//signup-test//
+
+//custom-fileds//
+/* Reset ONLY checkbox fields */
+.user-field.confirm .controls {
+  display: block !important;
+}
+
+/* Restore inline checkbox layout */
+.user-field.confirm .checkbox-label {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Ensure checkbox stays before text */
+.user-field.confirm .checkbox-label input {
+  order: 0 !important;
+}
+
+.user-field.confirm .checkbox-label span {
+  order: 1 !important;
+}
+/* Stack elements vertically */
+.user-field .controls {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label above input */
+.user-field .control-label {
+  position: static !important;
+  transform: none !important;
+  order: 1;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input second */
+.user-field input {
+  order: 2;
+}
+
+/* Description third */
+.user-field .instructions {
+  order: 3;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Remove floating label spacing */
+.user-field input {
+  padding-top: 10px !important;
+}
+/* Remove custom field descriptions */
+.user-field .instructions {
+  display: none !important;
+}
+//custom-fileds end//
+
+/* Make all input groups vertical */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Turn floating label into normal label */
+.input-group .alt-placeholder {
+  position: static !important;
+  transform: none !important;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+  pointer-events: auto;
+}
+
+/* Ensure correct order */
+.input-group input {
+  order: 2;
+}
+
+.input-group .alt-placeholder {
+  order: 1;
+}
+
+/* Fix spacing for helper text */
+.input-group .more-info {
+  order: 3;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Remove extra padding used for floating labels */
+.input-group input {
+  padding-top: 10px !important;
+}
+
+/* Optional: consistent styling like password field */
+.input-group input {
+  border-radius: 16px;
+}
+//2//
+.user-field-pronouns .select-kit-header {
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+}
+/* Target only the State custom field */
+.user-field-state .select-kit-header {
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+}
+
+.user-field-please-select-all-of-the-groups-your-organization-serves .select-kit-header {
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+}
+/* Target THIS exact field */
+.user-field-which-states-do-you-work-in 
+.select-kit.multi-select 
+> summary.multi-select-header {
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+}
+.user-field-role .select-kit-header {
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+}
+.user-field-type-of-organization .select-kit-header {
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+}
+
+#new-account-email {
+  border-radius: 16px;
+  border: 1px solid #5E5E6E;
+}
+#new-account-username {
+  border-radius: 16px;
+  border: 1px solid #5E5E6E;
+}
+#new-account-password {
+  border-radius: 16px;
+  border: 1px solid #5E5E6E;
+}
+.create-account__password.mss-password-confirm input {
+  border-radius: 16px;
+  border: 1px solid #5E5E6E;
+}
+//signup-test-end//
+//imp//
+.global-notice{
+    display: none;
+}
+//imp//
+[data-category-id="6"] .d-icon {
+  display: none !important;
+}
+
+[data-category-id="6"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/077c54bb9bdfbab3bcb3000de030d9f8892bcfb9.svg") no-repeat center;
+  background-size: contain;
+}
+
+[data-category-id="4"] .sidebar-section-link-prefix img {
+  display: none !important;
+}
+
+
+[data-category-id="62"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/077c54bb9bdfbab3bcb3000de030d9f8892bcfb9.svg") no-repeat center;
+  background-size: contain;
+}
+
+[data-category-id="4"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/025b139c52bf80abf37f719a0f8797ad5bff350f.svg") no-repeat center;
+  background-size: contain;
+}
+[data-category-id="63"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/77a6b1a548806f06601dcb31fba503f18a63dc18.png") no-repeat center;
+  background-size: contain;
+}
+
+[data-category-id="7"] .d-icon {
+  display: none !important;
+}
+
+[data-category-id="63"] .d-icon {
+  display: none !important;
+}
+[data-category-id="62"] .d-icon {
+  display: none !important;
+}
+
+[data-category-id="7"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/75ad8bb04dfbc8af31bed357aa818453cd056516.svg") no-repeat center;
+  background-size: contain;
+}
+
+[data-category-id="59"] .sidebar-section-link-prefix .d-icon {
+  display: none !important;
+}
+
+[data-category-id="59"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/5c434a0721f861d0e48bc4c7edf27048b092ce00.svg") no-repeat center;
+  background-size: contain;
+}
+
+[data-category-id="10"] .sidebar-section-link-prefix .d-icon {
+  display: none !important;
+}
+
+[data-category-id="10"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/74e396e37ee9ef151df30dbbc4ec20a608ecfbe1.svg") no-repeat center;
+  background-size: contain;
+}
+
+[data-category-id="8"] .sidebar-section-link-prefix .d-icon {
+  display: none !important;
+}
+[data-category-id="70"] .sidebar-section-link-prefix .d-icon {
+  display: none !important;
+}
+
+[data-category-id="8"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/74e396e37ee9ef151df30dbbc4ec20a608ecfbe1.svg") no-repeat center;
+  background-size: contain;
+}
+
+
+[data-category-id="70"] .sidebar-section-link-prefix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/d99b20af9523114fdb9080877e86c17c15c0e695.svg") no-repeat center;
+  background-size: contain;
+}
+
+#sidebar-section-content-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-category-id="4"] { order: 1; }
+
+[data-category-id="62"] { order: 2; }
+
+[data-category-id="7"] { order: 3; }
+
+[data-category-id="8"] { order: 4; }
+
+[data-category-id="63"] { order: 5; }
+
+[data-category-id="59"] { order: 6; }
+
+[data-category-id="10"] { order: 7; }
+
+[data-category-id="70"] { order: 8; }
+//icons-end//
+
+.topic-list .topic-card .topic-tags-inline .discourse-tag {
+  border: 1px solid #002D73;
+  border-radius: 16px;
+  padding: 4px 17px 5px 12px;
+  font-size: 16px;
+  font-family: Arial;
+  margin-left: 10px;
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+    border-radius: 50%;
+    width: 22px;
+    background-color: #002D73;
+    height: 22px;
+    float: left;
+    flex-shrink: 0;
+    z-index: 2;
+    outline: 1px solid rgba(0, 0, 0, 0);
+    margin-left: -8px;
+}
+.timeline-container .topic-timeline .timeline-scrollarea {
+    border-left: 2px dashed #002D73 !important;
+}
+//navigation-timeline//
+.landing-page ~ .footer,
+.landing-page ~ .below-footer-outlet,
+body:has(.landing-page) .footer,
+body:has(.landing-page) .below-footer-outlet {
+  display: none !important;
+}
+body:has(.course-overview1) #main-outlet ~ .footer,
+body:has(.course-overview1) .footer,
+body:has(.course-overview1) .below-footer-outlet {
+  display: none !important;
+}
+body:has(.landing-page) #main-outlet {
+margin-top: -20px !important;
+}
+
+
+.header-sidebar-toggle .btn-sidebar-toggle svg {
+  display: none !important;
+}
+.header-sidebar-toggle .btn-sidebar-toggle::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("https://medicaidhub.org/uploads/default/original/1X/950652a8680f6c61c10d32fa9330245707d9cc0c.svg") no-repeat center;
+  background-size: contain;
+}
+@font-face {
+  font-family: 'CandaraCustom';
+  src: url('/uploads/default/original/1X/a9c8c86b089813c5ad7b47993aa99911603f0345.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CandaraCustom';
+  src: url('/uploads/default/original/1X/e8716e8e9013fae818a57d277d2dcc6bc25e1fce.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+.top-external-header .has-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-external-header .caret img {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navigation-categories .categories-and-latest {
+  display: none;
+}
+
+body.navigation-topics .custom-announcements,
+body.navigation-topics .trending-topics-container,
+body.navigation-topics .resources-component,
+body.navigation-topics .homepage-search-banner-wrapper,
+body.navigation-topics .featured-topics-section,
+body.navigation-topics .followed-topics{
+  display: none !important;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+.header-dropdown-toggle.search-dropdown {
+  display: none !important;
+}
+
+.header-dropdown-toggle.chat-header-icon {
+  display: none !important;
+}
+
+.custom-topic-actions{
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    margin-top: -50px;
+}
+.custom-topic-actions .btn {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  cursor: pointer;
+}
+.follow-btn::after {
+    margin-left: 6px;
+    content: "+";
+    font-weight: 300;
+}
+
+.reply-btn::after {
+  content: "↩";
+   margin-left: 6px;
+    font-weight: 300;
+}
+/* FOLLOW */
+.follow-btn {
+  background: #002D73;
+  color: #fff;
+  
+}
+
+/* REPLY */
+.reply-btn {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+
+.topic-notifications-tracking {
+  display: none !important;
+}
+.above-main-container-outlet.homepage-search-banner {
+    border-radius: 16px 16px 0 0 !important;
+}
+
+#main-outlet-wrapper #main-outlet {
+    border: 1px solid #9fd5ca !important;
+    border-top: 16px solid #9fd5ca !important;
+    border-radius: 16px !important;
+}
+
+.above-main-container-outlet.homepage-search-banner {
+    padding-left: 75.2px !important;
+    padding-right: 21px !important;
+}
+.above-main-container-outlet.homepage-search-banner {
+    position: relative;
+    left: 50%;
+    margin-top: -63px;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1150px;
+    margin-left: 0 !important;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+}
+.d-header {
+    border-bottom: 1px solid #002D73;
+}
+
+.top-external-header {
+  border-bottom: none;
+}
+
+.d-header,
+.d-header-wrap {
+  border-top: none;
+  box-shadow: none;
+}
+
+body.custom-wizard .wizard-column .wizard-step-description {
+    text-align: center;
+}
+
+.topic-list-item, tbody tr {
+    border-bottom: 0px !important;
+}
+body:has(.activate-account) .course-overview1.landing-page {
+    display: none !important;
+}
+
+
+.post__row.row{
+    border: 1px solid #002D73;
+    border-radius: 16px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    background: #F5F7FA;
+}
+.topic-body {
+        border-top: 0px solid var(--content-border-color) !important;
+    }
+    .topic-avatar {
+        border-top: 0px solid var(--content-border-color) !important;
+    }
+    .topic-map.--op {
+    border-top: 0px solid var(--content-border-color) !important;
+}
+
+.topic-list thead.topic-list-header {
+  display: none;
+}
+
+.topic-list {
+  border-top: none !important;
+}
+
+.topic-list-body {
+  border-top: none !important;
+}
+
+.topic-list tbody tr:first-child td {
+  border-top: none !important;
+}
+//test=cat//
+#main-outlet-wrapper #main-outlet {
+    background: white !important;
+}
+.navigation-container {
+    display: none !important;
+}
+
+
+body.navigation-categories .topic-list,
+body.navigation-latest .topic-list {
+  display: none;
+}
+
+.powered-by-discourse {
+    display: none;
+}
+
+.theme-controls a.export {
+  display: none !important;
+}
+
+li[data-list-item-name="all-categories"] {
+  display: none !important;
+}
+
+.sidebar-section[data-section-name="tags"] .sidebar-section-content {
+  display: none !important;
+}
+
+.sidebar-section[data-section-name="tags"] .sidebar-section-header-button {
+  display: none !important;
+}
+
+.sidebar-section[data-section-name="chat-search"] {
+  display: none !important;
+}
+
+.sidebar-section[data-section-name^="chat"] {
+  display: none !important;
+}
+
+body:has(.account-created) .landing-page {
+  display: none !important;
+}
+
+body.static-login .top-external-header,
+body.login-fullpage .top-external-header,
+body.signup-fullpage .top-external-header,
+body:has(.landing-page) .top-external-header {
+  display: none !important;
+}
+
+body:has(.landing-page) #main-outlet {
+  margin-top: -20 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  max-width: 100% !important;
+}
+
+body:has(.login-fullpage) #main-outlet {
+    margin-top: 0px !important;
+}
+body:has(.signup-fullpage ) #main-outlet {
+    margin-top: 0px !important;
+}
+body.static-login .body-page {
+    display: none;
+}
+body:has(.login-fullpage) #main-outlet-wrapper #main-outlet {
+  border: 1px solid #9FD5CA !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+}
+body:has(.signup-fullpage) #main-outlet-wrapper #main-outlet {
+  border: 1px solid #9FD5CA !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+}
+body:has(.wizard-column) #main-outlet-wrapper #main-outlet {
+border: 1px solid #9FD5CA !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+}
+
+body:has(.wizard-column) .d-header {
+  display: block !important;
+}
+body:has(.wizard-column) .top-external-header {
+  display: none !important;
+}
+.signup-progress-bar {
+    justify-content: center;
+}
+.login-welcome-header {
+    justify-content: center;
+
+}
+#create-account-title {
+  display: grid;
+  grid-template-columns: 1fr; /* override existing */
+}
+
+#create-account-title::after {
+  content: "Fields marked with * are required.";
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #2f4b7c;
+}
+#create-account-title::after {
+  content: "Fields marked with * are required.";
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #6b7a99;
+  text-align: center;
+}
+
+#login-form {
+  margin-top: 10px;
+}
+#create-account-title ~ form .more-info {
+  display: none !important;
+}
+
+.create-account-email .alt-placeholder::after {
+  content: " *";
+  color: #1c3775;
+  font-weight: 600;
+}
+
+
+.create-account__password > .alt-placeholder::after {
+  content: " *";
+  color: #1c3775;
+  font-weight: 600;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group .alt-placeholder {
+  order: -1;
+}
+.input-group {
+  margin-bottom: 18px;
+}
+
+.alt-placeholder {
+  margin-bottom: 6px;
+}
+
+body:has(.login-fullpage) section.course-overview1.landing-page,
+body:has(.signup-fullpage) section.course-overview1.landing-page {
+  display: none !important;
+}
+
+.landing-page {
+  margin-bottom: -1px;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+
+.landing-page {
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+.sidebar-section-link-wrapper .sidebar-section-link--active, .sidebar-section-link-wrapper .sidebar-section-link.active, .sidebar-section-link-wrapper .sidebar-section-link.exact-url-match {
+    background: none;
+    color: var(--d-sidebar-active-color);
+    font-weight: 500 !important;
+}
+
+#sidebar-section-content-community {
+  display: none !important;
+}
+
+.sidebar-custom-sections {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+[data-section-name="categories"] {
+  order: 1 !important;
+}
+
+[data-section-name="topics"] {
+  order: 2 !important;
+}
+
+[data-section-name="tags"] {
+  order: 3 !important;
+}
+
+[data-section-name="community"] {
+  order: 4 !important;
+}
+
+[data-section-name="categories"] {
+  order: -999 !important;
+}
+
+[data-section-name="topics"] {
+  order: 0 !important;
+}
+
+[data-section-name="tags"] {
+  display: none !important;
+}
+
+
+[data-section-name="topics"] {
+  padding: 12px 0;
+}
+
+[data-section-name="topics"] .sidebar-section-header-text {
+  color: #0f2f5c;
+}
+
+[data-section-name="topics"] .sidebar-section-link {
+  padding: 1px 14px;
+  display: flex;
+  align-items: center;
+}
+
+[data-section-name="topics"] .sidebar-section-link-prefix {
+  display: none;
+}
+
+[data-section-name=topics] .sidebar-section-link-content-text {
+    font-family: arial;
+    font-size: 16px;
+    font-weight: 400;
+    color: #002D73;
+}
+
+[data-section-name="topics"] 
+[data-list-item-name="All Topics"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-section-name="topics"] 
+[data-list-item-name="All Topics"]::after {
+  content: "→";
+  font-size: 18px;
+  color: #0f2f5c;
+  margin-right: 16px;
+}
+[data-section-name=categories] .sidebar-section-link-content-text {
+    line-height: 120%;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 300;
+    color: #002d73 !important;
+}
+
+[data-section-name="categories"] .sidebar-section-header-caret {
+  display: none !important;
+}
+
+[data-section-name="categories"] .sidebar-section-header {
+  padding-left: 0 !important;
+  color: #002d73 !important;
+}
+
+[data-section-name="categories"] .sidebar-section-header-text {
+  text-transform: none !important;
+  font-size: 18px;
+  font-family: Arial;
+}
+[data-section-name="topics"] .sidebar-section-header-text {
+  text-transform: none !important;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+[data-section-name="categories"] .sidebar-section-header-text {
+  margin-left: 0 !important;
+}
+
+[data-section-name="topics"] .sidebar-section-header-caret {
+  display: none !important;
+}
+
+[data-section-name="topics"] .sidebar-section-header-global-indicator {
+  display: none !important;
+}
+
+[data-section-name="topics"] .sidebar-section-header {
+  padding-left: 0 !important;
+}
+
+[data-section-name="topics"] .sidebar-section-header-text {
+  margin-left: 0 !important;
+}
+
+//topic-sidebar-end//
+
+    body.has-sidebar-page .sidebar-wrapper {
+        border-top: 16px solid #9FD5CA !important;
+        border-radius: 16px !important;
+    }
+body.navigation-topics {
+  background: #F5F7FA !important;
+}
+body #main-outlet {
+        background: #F5F7FA !important;
+        border: 0px !important;
+    }
